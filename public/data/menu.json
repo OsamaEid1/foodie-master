@@ -1,0 +1,160 @@
+[
+    {
+        "id": 4,
+        "cat": "pizza",
+        "name": "BBQ Chicken",
+        "price": 75.00,
+        "medPrice": 80.5,
+        "lgPrice": 87,
+        "offer": 15,
+        "img": "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/8164_4k.jpg"
+    },
+    {
+        "cat": "burger",
+        "id": 5,
+        "name": "Beef",
+        "price": 50.00,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 5,
+        "img": "https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/520765216/classic-beef-burger.jpg?resize=640,468&quality=82&strip=all"
+    },
+    {
+        "cat": "sandwich",
+        "id": 12,
+        "name": "Ham",
+        "price": 75.00,
+        "offer": 15,
+        "img": "https://restaurantclicks.com/wp-content/uploads/2021/06/Ham-Sandwich.jpg"
+    },
+    {
+        "id": 3,
+        "cat": "pizza",
+        "name": "Margherita",
+        "price": 67.00,
+        "medPrice": 75.5,
+        "lgPrice": 83,
+        "offer": null,
+        "img": "https://www.monsieur-cuisine.com/fileadmin/_processed_/3/2/csm_24439_Rezeptfoto_391bb_5c5be6c790.jpg"
+    },
+    {
+        "id": 1,
+        "cat": "pizza",
+        "name": "Cheese Pizza",
+        "price": 50.00,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 5,
+        "img": "https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900"
+    },
+    {
+        "id": 2,
+        "cat": "pizza",
+        "name": "Veggie",
+        "price": 52.50,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 10,
+        "img": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Grilled-Veggie-Pizza_EXPS_LSBZ18_48960_D01_18_6b.jpg"
+    },
+    {
+        "id": 6,
+        "cat": "burger",
+        "name": "Elk",
+        "price": 52.50,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 10,
+        "img": "https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/316673155/elk-burger.jpg?resize=640,468&quality=82&strip=all"
+    },
+    {
+        "id": 7,
+        "cat": "burger",
+        "name": "Portobello Mushroom",
+        "price": 67.00,
+        "medPrice": 75.5,
+        "lgPrice": 83,
+        "offer": null,
+        "img": "https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/254552601/raw-portobello-burger.jpg?resize=640,468&quality=82&strip=all"
+    },
+    {
+        "id": 8,
+        "cat": "burger",
+        "name": "Turkey",
+        "price": 75.00,
+        "medPrice": 80.5,
+        "lgPrice": 88,
+        "offer": null,
+        "img": "https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/184168996/turkey-burger.jpg?resize=640,468&quality=82&strip=all"
+    },
+    {
+        "id": 9,
+        "cat": "sandwich",
+        "name": "Chicken",
+        "price": 50.00,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": null,
+        "img": "https://restaurantclicks.com/wp-content/uploads/2021/06/Chicken-Sandwich.jpg"
+    },
+    {
+        "id": 10,
+        "cat": "sandwich",
+        "name": "Egg",
+        "price": 52.50,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 5,
+        "img": "https://restaurantclicks.com/wp-content/uploads/2021/06/Egg-Sandwich.jpg"
+    },
+    {
+        "id": 11,
+        "cat": "sandwich",
+        "name": "Seafood",
+        "price": 67.00,
+        "medPrice": 75,
+        "lgPrice": 80,
+        "offer": null,
+        "img": "https://restaurantclicks.com/wp-content/uploads/2021/06/Seafood-Sandwich.jpg"
+    },
+    {
+        "id": 13,
+        "cat": "drink",
+        "name": "Caffè moka",
+        "price": 50.00,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 10,
+        "img": "https://cdn.tasteatlas.com//images/ingredients/ebb0c24ce7c84eab993d0bd44317fc3c.jpg?w=905&h=510"
+    },
+    {
+        "id": 14,
+        "cat": "drink",
+        "name": "Ponche de Maca",
+        "price": 52.50,
+        "medPrice": 60,
+        "lgPrice": 73,
+        "offer": 3,
+        "img": "https://cdn.tasteatlas.com//images/ingredients/bcd4f217af8a4d0097bc22af635a4fe2.jpg?w=905&h=510"
+    },
+    {
+        "id": 15,
+        "cat": "drink",
+        "name": "Yellow Tea",
+        "price": 67.00,
+        "medPrice": 75.5,
+        "lgPrice": 83,
+        "offer": 5,
+        "img": "https://www.organicfacts.net/wp-content/uploads/yellowtea.jpg"
+    },
+    {
+        "cat": "drink",
+        "id": 16,
+        "name": "Shou Pu Erh",
+        "price": 75.00,
+        "medPrice": 80,
+        "lgPrice": 89,
+        "offer": 15,
+        "img": "https://cdn.tasteatlas.com//images/ingredients/5fba3052a889434bbf208170a0b6580a.jpg?w=905&h=510"
+    }
+]

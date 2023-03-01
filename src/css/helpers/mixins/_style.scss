@@ -1,0 +1,40 @@
+/* Start Mixins */
+@mixin break-points ($point) {
+    @if $point == "mobile" {
+        @media (max-width: 480px) {
+            @content;
+        }
+    } @else if $point == "small" {
+        @media (max-width: 767px) {
+            @content;
+        }
+    } @else if $point == "medium" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $point == "large" {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $point =="x-large" {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+@mixin edge-shape($color) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    left: 0;
+    @if $color == "white" {
+        background-image: url(../images/edge-shape-white.png);
+    } @else if $color == "gray" {
+        background-image: url(../images/edge-shape-grey.png);
+    } @else {
+        @error "Invalid Argument - Only white OR gray!";
+    }
+}
+/* End Mixins */

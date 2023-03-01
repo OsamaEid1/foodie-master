@@ -1,0 +1,287 @@
+// Import Mixins
+@use "../mixins/style" as *;
+
+/* Start Header */
+@mixin header() {
+    header {
+        color: white;
+        border-bottom: 1px solid var(--champagne-pink_20);
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+    
+        .container {
+            height: 67px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+    
+            nav {
+                .toggle-menu {
+                    cursor: pointer;
+                    user-select: none;
+                    display: none;
+                    @include break-points(small) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                        width: 25px;
+        
+                        span {
+                            display: block;
+                            height: 4px;
+                            border-radius: 100px;
+                            background-color: var(--champagne-pink);
+                            transition: var(--transition-1);
+        
+                            &:first-child {
+                                width: 50%;
+                            }
+        
+                            &:last-child {
+                                width: 50%;
+                                align-self: flex-end;
+                            }
+        
+                            &.toggle-top-span {
+                                transform: translate(1px, 3px) rotate(45deg);
+                            }
+        
+                            &.toggle-middle-span {
+                                transform: rotate(-45deg);
+                            }
+        
+                            &.toggle-bottom-span {
+                                transform: translate(-1px, -3px) rotate(45deg);
+                            }
+                        }
+                    }
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    a {
+                        display: block;
+                        padding: 22px 20px;
+                        font-size: .9rem;
+                        font-weight: 500;
+                        transition: var(--transition-1);
+        
+                        &:not(.resrv-btn):hover {
+                            color: var(--deep-saffron);
+                        }
+        
+                        @include break-points(large) {
+                            font-size: 1rem;
+                        }
+                    }
+        
+                    @include break-points(small) {
+                        flex-direction: column;
+                        width: 100%;
+                        background-color: white;
+                        position: absolute;
+                        top: 80%;
+                        right: 0;
+                        transition: var(--transition-1);
+                        display: none;  
+                        li {
+                            width: 100%;
+                            a {
+                                color: hsla(207, 26%, 7%, 0.873);
+                                border-bottom: 1px solid var(--independence_30);
+                                padding: 10px 20px;
+                            }
+                            &>.resrv-btn {
+                                font-size: .9rem;
+                                padding: 10px 20px;
+                                border-bottom: none;
+                                &:hover::before {
+                                    transform: scale(100);
+                                }
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+                        
+                        &.toggle-nav {
+                            display: flex;
+                            top: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .change-header-style {
+        animation: header-ani var(--transition-2) forwards;
+        background-color: white;
+        color: black;
+    }
+    .header-pages-style {
+        background-color: white;
+        color: black;
+    }
+    .change-header-spans-style {
+        background-color: black;
+    }
+}
+/* End Header */
+
+/* Start Landing */
+
+/* Start Footer */
+@mixin footer() {
+    footer {
+        padding: var(--section-padding) 0 0;
+        position: relative;
+        // position: fixed;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        &::before {
+            @include edge-shape("white");
+            top: -15px;
+        }
+    
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+            position: relative;
+            h2 {
+                color: black;
+            }
+    
+            .footer-head {
+                position: relative;
+    
+                &::after {
+                    content: "";
+                    width: 30px;
+                    height: 4px;
+                    background-color: var(--deep-saffron);
+                    position: absolute;
+                    top: 50%;
+                    transform: translateX(10px);
+                    // // There are 2 way to do it: 
+                    // box-shadow: inset -5px 0px 0px 0px var(--deep-saffron),
+                    //     inset -12px 0px 0px 0 white;
+                    // OR
+                    border-inline-end: 5px solid var(--deep-saffron);
+                    box-shadow: inset -6px 0 0 0 white;
+                }
+            }
+    
+            .social-links {
+                ul {
+                    margin-top: 15px;
+                    display: flex;
+                    gap: 5px;
+    
+                    li {
+                        a {
+                            display: block;
+                            width: 35px;
+                            height: 33px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--deep-saffron);
+                            color: white;
+                            transition: var(--transition-1);
+    
+                            &:hover {
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            &>div:not(:first-child) p {
+                margin-bottom: 10px;
+            }
+    
+            form {
+                margin-top: 20px;
+                max-width: 100%;
+    
+                input {
+                    width: 65%;
+                    padding: 15px 10px;
+                    border: 2px solid var(--champagne-pink);
+                    border-right: none;
+                }
+    
+                button {
+                    width: 35%;
+                    padding: 15px 10px;
+                    border: 2px solid var(--deep-saffron);
+                    border-left: none;
+                    background-color: var(--deep-saffron);
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: var(--transition-2);
+    
+                    &:hover {
+                        background-color: black;
+                        border-color: black;
+                    }
+                }
+            }
+        }
+    
+        .delivery-footer {
+            min-height: 100px;
+            height: fit-content;
+            background-image: url(../images/footer-illustration.png);
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            border-bottom: 1px solid #9b9b9b;
+            position: relative;
+            overflow: hidden;
+    
+            img {
+                width: 20%;
+                position: absolute;
+                bottom: -1px;
+                animation: delivery-running 20s infinite linear;
+    
+                @media (min-width: 500px) {
+                    width: 15%;
+                }
+            }
+    
+            @media (min-width: 620px) {
+                & {
+                    height: 150px;
+                }
+            }
+    
+            @include break-points(large) {
+                height: 250px;
+            }
+        }
+    
+        .copy-rights {
+            text-align: center;
+            margin: 5px 0;
+    
+            a {
+                font-weight: bold;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+/* End Footer */

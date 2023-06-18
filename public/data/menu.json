@@ -28,16 +28,6 @@
         "img": "https://restaurantclicks.com/wp-content/uploads/2021/06/Ham-Sandwich.jpg"
     },
     {
-        "id": 3,
-        "cat": "pizza",
-        "name": "Margherita",
-        "price": 67.00,
-        "medPrice": 75.5,
-        "lgPrice": 83,
-        "offer": null,
-        "img": "https://www.monsieur-cuisine.com/fileadmin/_processed_/3/2/csm_24439_Rezeptfoto_391bb_5c5be6c790.jpg"
-    },
-    {
         "id": 1,
         "cat": "pizza",
         "name": "Cheese Pizza",
